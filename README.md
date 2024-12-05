@@ -1,5 +1,5 @@
 
-# React useContext Hook
+<h1 align="center">React useContext Hook</h1>
 
 This demonstrates the use of the `useContext` hook in React to manage and share state across multiple components in a simple and structured way. It uses a global context to pass down a username and a function to update it.
 
