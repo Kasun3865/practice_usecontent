@@ -32,18 +32,21 @@ src/
 ## Setup Instructions
 
 1. **Clone the Repository**:
+  
+    ```
+     git clone https://github.com/Kasun3865/practice_usecontent.git
+    ```
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   cd practice_usecontent
    ```
 
-2. **Install Dependencies**:
+3. **Install Dependencies**:
    Ensure you have [Node.js](https://nodejs.org/) installed, then run:
    ```bash
    npm install
    ```
 
-3. **Start the Application**:
+4. **Start the Application**:
    ```bash
    npm start
    ```
