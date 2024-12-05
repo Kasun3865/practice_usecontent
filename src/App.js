@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import First from './Components/First'
+import { useState, createContext } from 'react'
+import './App.css'
 
-function App() {
+export const myName = createContext({})
+
+export default function App() {
+
+  const [userName, setUserName] = useState('Hello!')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className='container'>
+      <myName.Provider value={{
+        userName,
+        setUserName
+      }} >
+        <div className='header'>
+          <p>{userName}</p>
+        </div>
 
-export default App;
+        <First />
+
+      </myName.Provider>
+    </div>
+  )
+}
